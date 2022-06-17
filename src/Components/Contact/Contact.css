@@ -1,7 +1,9 @@
 .background-side{
     background-image: url(../../Images/bg.jpeg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 .main-container{
     display: flex;
@@ -9,26 +11,34 @@
     justify-content: center;
     /* margin-top: 180px;
     margin-left: 396px; */
-    width: 778px;
-    height: 485px;
-    border: 2px solid darkblue;
+    /* width: 778px; */
+    height: 100vh;
 }
 .contact-info h2{
     text-align: center;
-    font-size: 20px;
+    /* font-size: 654; */
+    font-weight: 100 !important;
+    font-family: 'Mukta', sans-serif;
 }
 .contact-second{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow:   2px 20px 20px 2px #888888;
 }
 .contact-info{
-    border: 2px solid black;
+    height: 455px;
+    width: 469px;
+}
+.contact-info p{
+    color: #adb2c4;
+    margin-top: -35px;
 }
 .contact-input{
     background-color: #292e3f;
     text-align: left;
     padding-left: 33px;
+    width: 342px;
 }
 .contact-input h3{
     color: #4dc8a8;
@@ -36,6 +46,8 @@
     padding-top: 44px;
     padding-bottom: 20px;
     text-align: left;
+    font-family: 'Mukta', sans-serif;
+/* font-family: 'Oleo Script Swash Caps', cursive; */
 }
 .contact-input button{
     background-color: #53dab2;
@@ -49,6 +61,7 @@
     font-weight: 700;
     border-radius: 5px;
     margin-bottom: 36px;
+    font-family: 'Mukta', sans-serif;
 }
 .contact-input input{
     background-color: #494d5c;
