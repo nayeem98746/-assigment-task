@@ -30,6 +30,25 @@
     height: 455px;
     width: 469px;
 }
+@media only screen and (max-width:688px) {
+    .contact-info{
+        margin-top: 164px !important;
+    }
+    .background-side{
+        height: 1000px !important;
+    }
+    .contact-second{
+        box-shadow: none;
+    }
+}
+@media only screen  and
+ (min-width:689px) and
+ (max-width:991px){
+    .contact-second{
+        box-shadow: none;
+    }
+    
+}
 .contact-info p{
     color: #adb2c4;
     margin-top: -35px;

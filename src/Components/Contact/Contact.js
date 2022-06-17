@@ -2,13 +2,22 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import img from '../../Images/illustration.png'
 import "./Contact.css";
+
+
+const Result = () => {
+  return (
+      <p style={{color:'white'}} >Your massage han been successfully</p>
+  )
+}
+
+
 const Contact = () => {
  
 
   const { register, handleSubmit , reset} = useForm();
   const onSubmit = (data, e ) =>  {
     console.log(data);
-    axios.post('http://localhost:5000/contacts' , data ,e)
+    axios.post('https://powerful-earth-66181.herokuapp.com/contacts' , data ,e)
     .then(res => {
         console.log(res)
         if(res.data.insertedId){
@@ -45,6 +54,7 @@ const Contact = () => {
       <input {...register("lastName")} required placeholder="Last-Name" /><br /><br />
       <input {...register("address")} required placeholder="Address" /><br /><br />
       <button type="submit">STAY UPDATED</button>
+      
     </form>
            
           </div>
